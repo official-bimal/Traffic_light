@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+  }
+  
+  .traffic-light {
+    position: relative;
+    width: 100px;
+  }
+  
+  .stand {
+    width: 20px;
+    height: 200px;
+    background-color: black;
+    margin: 20px auto -520px;
+  }
+  
+  .light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px auto;
+    transition: background-color 0.5s;
+    box-shadow: 0 0 20px #fff;
+    opacity: 0.3;
+  }
+  
+  .light.active {
+    opacity: 1;
+  }
+  
+  .red {
+    background-color: #ff4136;
+  }
+  
+  .yellow {
+    background-color: #ffd700;
+  }
+  
+  .green {
+    background-color: #2ecc40;
+  }
+  
+  .message-box {
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    color: #fff;
+    background-color: rgb(104, 106, 225);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .message {
+    margin: 0;
+  }
+  
